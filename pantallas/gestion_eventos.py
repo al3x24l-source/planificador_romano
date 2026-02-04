@@ -18,7 +18,7 @@ class PantallaGestionEventos:
         """Crea la interfaz de gestión de eventos"""
         self.ventana = tk.Toplevel(self.root)
         self.ventana.title("Planificador Romano - Gestión de Eventos")
-        self.ventana.geometry("1100x750")
+        self.ventana.geometry("900x700")
         self.ventana.configure(bg="#2b2b2b")
         
         # Centrar ventana

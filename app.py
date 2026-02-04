@@ -7,8 +7,6 @@ class PlanificadorRomanoApp:
     """Aplicación principal del Planificador Imperial Romano"""
     
     def __init__(self):
-        print(" INICIALIZANDO APLICACIÓN IMPERIAL")
-        print("=" * 50)
         
         # Configurar directorio actual
         self.dir_actual = os.path.dirname(os.path.abspath(__file__))
@@ -25,14 +23,8 @@ class PlanificadorRomanoApp:
         # Inicializar componentes
         self._inicializar_componentes()
         
-        print("=" * 50)
-        print(" APLICACIÓN INICIALIZADA")
-        print(f"   - Directorio datos: {self.directorio_datos}")
-        print(f"   - Eventos cargados: {len(self.calendario.eventos)}")
     
     def _cargar_modulos(self):
-        """Carga todos los módulos necesarios"""
-        print("\n CARGANDO MÓDULOS IMPERIALES:")
         
         # MODELOS
         try:
